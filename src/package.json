@@ -1,0 +1,19 @@
+{
+  "name": "honors-college-sim-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "process-assets": "tile-extruder --tileWidth 32 --tileHeight 32 --margin 1 --spacing 2 --input ./src//tileset.png --output ./dist/tilesets/tileset.png"
+
+  },
+  "devDependencies": {
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "phaser": "^3.70.0"
+  }
+}

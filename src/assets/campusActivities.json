@@ -1,0 +1,221 @@
+{
+    "planList": [
+        {
+            "name":"volunteer club",
+            "prefix": "to the ",
+            "stat":"social",
+            "location":"107",
+            "unlocks":""
+        },
+        {
+            "name":"handicraft club",
+            "prefix": "to the ",
+            "stat":"focus",
+            "location":"103",
+            "unlocks":"craft"
+        },
+        {
+            "name":"book club",
+            "prefix": "to the ",
+            "location":"library",
+            "stat":"focus",
+            "unlocks":"reading"
+        },
+        {
+            "name":"ceramics club",
+            "prefix": "to the ",
+            "location":"107",
+            "stat":"focus",
+            "unlocks":"pottery"
+        },
+        {
+            "name":"drawing club",
+            "prefix": "to the ",
+            "location":"107",
+            "stat":"social",
+            "unlocks":"drawing"
+        },
+        {
+            "name":"musician club",
+            "prefix": "to the ",
+            "location":"107",
+            "stat":"social",
+            "unlocks":"play music"
+        },
+        {
+            "name":"professional development club",
+            "prefix": "to the ",
+            "location":"107",
+            "stat":"social",
+            "unlocks":"resume"
+        },
+        {
+            "name":"business studio",
+            "prefix": "to the ",
+            "location":"107",
+            "stat":"social",
+            "unlocks":"resume"
+        },
+        {
+            "name":"yoga class",
+            "prefix": "to ",
+            "location":"gym",
+            "stat":"focus",
+            "unlocks":"meditation"
+        },
+        {
+            "name":"office hours",
+            "prefix": "to a professor's ",
+            "location":"107",
+            "stat":"study",
+            "unlocks":"resume"
+        },
+        {
+            "name":"study group",
+            "prefix": "to ",
+            "location":"union",
+            "stat":"study",
+            "unlocks":""
+        },
+        {
+            "name":"homework together",
+            "prefix": "do ",
+            "location":"dorm",
+            "stat":"study",
+            "unlocks":""
+        },
+        {
+            "name":"bingo night",
+            "prefix": "to ",
+            "location":"gym",
+            "stat":"social",
+            "unlocks":"n/a"
+        },
+        {
+            "name":"card game night",
+            "prefix": "to ",
+            "stat":"social",
+            "location":"dorm",
+            "unlocks":"n/a"
+        },
+        {
+            "name":"movie night",
+            "prefix": "have a ",
+            "location":"dorm",
+            "stat":"social",
+            "unlocks":"n/a"
+        },
+        {
+            "name":"bowling",
+            "prefix": "",
+            "location":"union",
+            "stat":"focus",
+            "unlocks":"bowling"
+        },
+        {
+            "name":"running club",
+            "prefix": "to the ",
+            "location":"gym",
+            "stat":"focus",
+            "unlocks":"running"
+        },
+        {
+            "name":"running",
+            "prefix": "",
+            "location":"campus",
+            "stat":"focus",
+            "unlocks":"running"
+        },
+        {
+            "name":"gym",
+            "prefix": "to the ",
+            "location":"gym",
+            "stat":"focus",
+            "unlocks":"gym"
+        },
+        {
+            "name":"rock climbing",
+            "prefix": "",
+            "location":"gym",
+            "stat":"focus",
+            "unlocks":"gym"
+        },
+        {
+            "name":"kickboxing",
+            "prefix": "",
+            "location":"gym",
+            "stat":"focus",
+            "unlocks":"kickboxing"
+        },
+        {
+            "name":"hike",
+            "prefix": "for a",
+            "location":"campus",
+            "stat":"focus",
+            "unlocks":"hike"
+        },
+        {
+            "name":"dinner",
+            "prefix": "get ",
+            "location":"union",
+            "stat":"focus",
+            "unlocks":""
+        },
+        {
+            "name":"lunch",
+            "prefix": "get ",
+            "location":"union",
+            "stat":"focus",
+            "unlocks":""
+        },
+        {
+            "name":"coffee",
+            "prefix": "get ",
+            "location":"union",
+            "stat":"focus",
+            "unlocks":""
+        },
+        {
+            "name":"coffee shop",
+            "prefix": "go to a ",
+            "location":"union",
+            "stat":"focus",
+            "unlocks":""
+        },
+        {
+            "name":"ice cream shop",
+            "prefix": "go to a ",
+            "location":"union",
+            "stat":"focus",
+            "unlocks":""
+        },
+        {
+            "name":"shopping",
+            "prefix": "go ",
+            "location":"union",
+            "stat":"social",
+            "unlocks":"shopping"
+        },
+        {
+            "name":"groceries",
+            "prefix": "get ",
+            "location":"campus",
+            "stat":"social",
+            "unlocks":"shopping"
+        },
+        {
+            "name":"play video games",
+            "prefix": "",
+            "location":"dorm",
+            "stat":"social",
+            "unlocks":"gaming"
+        },
+        {
+            "name":"bonfire",
+            "prefix": "to the",
+            "location":"campus",
+            "stat":"social",
+            "unlocks":""
+        }
+    ]
+}

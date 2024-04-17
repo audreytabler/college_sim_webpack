@@ -1,0 +1,213 @@
+{
+    "dialogList": [
+        {
+            "dialog":[
+                {
+                    "name": "Narrator",
+                    "text": "You feel refreshed and your mind seems much clearer now! (+20 Focus)",
+                    "stat": "focus",
+                    "increment": 20,
+                    "mins":30
+                }
+            ]
+        },
+        {
+            "dialog": [
+                {
+                    "name": "Narrator",
+                    "text": "Good morning and happy Monday! (click to progress dialog)"
+                },
+                {
+                    "name": "Narrator",
+                    "text": "The bars in the top left of your screen represent your energy, focus, and social, hover over them to see your current percentage level for each of them! "
+                },
+                {
+                    "name": "Narrator",
+                    "text": "Your goal is to use your energy in order to keep the rest of the stats from dropping too low. Sleep or use snacks to restore energy."
+                },
+                {
+                    "name": "Narrator",
+                    "text": "You slept for eight hours last night so your energy bar is full! Your focus levels are a little low this morning-- how about a shower to help clear your mind? (use WASD or arrow keys to move after you click to exit this dialog)",
+                    "goal":"shower"
+                }
+            ]
+        },
+        {
+            "dialog":[
+                {
+                    "name": "Narrator",
+                    "text": "Great! You feel ready for class! Check the reminder app on your phone to see what time your first class is at today"
+                },
+                {
+                    "name": "Narrator",
+                    "text": "Access your phone by clicking the item displaying the time at the bottom of the screen. Once it's focused, you can use the darker box at the bottom to return to the home screen"
+
+                },
+                {
+                    "name": "Narrator",
+                    "text": "After you've found out what time your first class is at, head out of the dorm (go out to the left hallway and then head downwards) to get to the main campus",
+                    "goal": "CAMPUS_SCENE"
+                }
+            ]
+        },
+        {
+            "dialog":[
+                {
+                    "name": "Narrator",
+                    "text": "Welcome to the main campus! This is where you can find most buildings affiliated with the school such as the dorms, class buildings, the union and the gym"
+                },
+                {
+                    "name": "Narrator",
+                    "text": "You should have a bit of time to explore before your first class starts, but it is wise to know where your classroom is ahead of time before class starts."
+                },
+                {
+                    "name": "Narrator",
+                    "text": "Go ahead and find the building your first class is located in-- it will be the first stone building if you take the path that goes right.",
+                    "goal": "CLASS_SCENE"
+                }
+            ]
+            
+        },
+        {"dialog":[
+            {
+                "name": "Narrator",
+                "text": "You found the academic building! This is the building where most STEM classes will be located."
+            },{
+                "name": "Narrator",
+                "text": "Go ahead and find where your first class is-- check your phone if you have forgotten which room it is in.",
+                "goal":"107"
+            }
+        ]},
+        {"dialog":[
+            {
+                "name": "Narrator",
+                "text": "This is where your first class of the day will be located. You will be able to enter the room 10 minutes before class is scheduled to start (via clicking the room number again)"
+            },{
+                "name": "Narrator",
+                "text": "You can spend spare time on your phone (which can raise different stats depending on what you choose), or explore the building to find where your other classes are located."
+            },
+            {
+                "name": "Narrator",
+                "text": "If you accidentally miss a class, visit your professor's office hours to find out what to spend time studying to help make up the class knowledge points missed."
+            },
+            {
+                "name": "Narrator",
+                "text": "Keep in mind that it is a good idea to stay on top of class work. If you let tasks pile up for too long it can become overwhelming to start."
+            },
+            {
+                "name": "Narrator",
+                "text": "You now have the freedom to proceed with your day however you would like from here. Explore around campus and talk to people for more helpful hints and ways to get involved in the community!"
+            },
+            {
+                "name": "Narrator",
+                "text": "Have fun!"
+            }
+
+        ]},
+        {"dialog":[
+            {
+                "name": "Narrator",
+                "text": "Great! Your next class is starting in 10 minutes "
+            },{
+                "name": "Narrator",
+                "text": "You probably have the hang of things now! Explore around campus and your phone to discover"
+            }
+        ]},
+        {
+            "dialog": [
+                {
+                    "name": "Narrator",
+                    "text": "Hello student! Welcome to orientation! (click text box to continue)"
+                },
+                {
+                    "name": "Narrator",
+                    "text": "Let's get you settled in to your dorm room-- Your roommate is so excited to meet you!"
+                },
+                {
+                    "name": "Narrator",
+                    "text": "You will see your current task at the top of the screen, right now let's take your items to your new room. You will be in room 103 this semester."
+                }
+            ]
+        },
+        {
+            "dialog": [
+                {
+                    "name": "Narrator",
+                    "text": "Welcome to your dorm room! This is your primary space to recharge and can be useful for getting away from distractions if there is something you really need to focus on."
+                },
+                {
+                    "name": "Narrator",
+                    "text": "Spending time here increases your focus meter, which generally makes activities such as studying, meditation, and decision making more effective"
+                },
+                {
+                    "name": "Narrator",
+                    "text": "Spending 8 hours in bed per day will give you a full energy bar for a days activities, but if you find there is not enough hours in a day you can also give yourself temporary energy via caffeinated drinks or snacks."
+                },
+                {
+                    "name": "Narrator",
+                    "text": "It is generally a good idea to keep a couple of snacks on you in case of emergencies"
+                }
+            ]
+        },
+        {
+            "dialog": [
+                {
+                    "name": "Narrator",
+                    "text": "This is the central area of campus, use the arrow keys or WASD to explore!"
+                },
+                {
+                    "name": 2,
+                    "text": "This is the central area of campus, use the arrow keys or WASD to explore!"
+                },
+                {
+                    "name": "Narrator",
+                    "text": "At the top of the screen you will see your current task, why don't you try finding your way to your first class of the day! It is in the English building on the west side of campus!"
+                }
+            ]
+        }
+    ],
+    "statUpdates":[
+        {"name":"shower",
+        "text": "You feel refreshed and your mind seems much clearer now! (+20 Focus)",
+        "stat": "focus",
+        "increment": 20,
+        "mins":30},
+
+        {"name":"shower",
+        "text": "You've already taken a shower today",
+        "stat": "focus",
+        "increment": 0,
+        "mins":0},
+
+        {"name":"class",
+        "text": "You attended class! (-20 Focus, +20 class points)",
+        "stat": "class",
+        "increment": 20,
+        "mins":50},
+        
+        {"name":"sleep",
+        "text": "one hour of sleep",
+        "stat":"energy",
+        "increment":13,
+        "mins":60
+        },
+        {"name":"study",
+        "text": "one hour of study",
+        "stat":"class",
+        "increment":20,
+        "mins":60
+        },
+        {"name":"call-home",
+        "text": "calling home",
+        "stat":"social",
+        "increment":20,
+        "mins":60
+        },
+        {"name":"video",
+        "text": "educational videos for one hour",
+        "stat":"focus",
+        "increment":20,
+        "mins":60
+        }
+    ]
+}
