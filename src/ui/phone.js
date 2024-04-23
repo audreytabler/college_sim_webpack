@@ -51,13 +51,15 @@ export class Phone extends Phaser.GameObjects.Graphics {
         this.socialContainer.add([this.textingButton,this.textLabel,this.hangoutButton,this.hangoutLabel,this.callButton,this.callLabel])
 
         //video container
-
-        this.funVideos = this.scene.add.rectangle(130,350,120,50,0xE68E7B).setInteractive();
-        this.educationVideos = this.scene.add.rectangle(130,410,120,50,0x686971).setInteractive();
-        this.newsVideos = this.scene.add.rectangle(130,470,120,50,0x749F9A).setInteractive();
+                        
+        this.funVideos = this.scene.add.image(130,350,"funVideo").setInteractive(); //this.scene.add.rectangle(130,350,120,50,0xE68E7B).setInteractive();
+        this.educationVideos = this.scene.add.image(130,410,"studyVideo").setInteractive();//this.scene.add.rectangle(130,410,120,50,0x686971).setInteractive();
+        this.newsVideos = this.scene.add.image(130,470,"newsVideo").setInteractive();//this.scene.add.rectangle(130,470,120,50,0x749F9A).setInteractive();
+        this.playButton = this.scene.add.image(130,470,"playSymbol").setAlpha(0.7).setVisible(false)
+        
 
         this.videoContainer = this.scene.add.container(0,0)
-        this.videoContainer.add([this.funVideos,this.educationVideos,this.newsVideos])
+        this.videoContainer.add([this.funVideos,this.educationVideos,this.newsVideos,this.playButton])
 
         //study container
         this.rectangleDecor = this.scene.add.rectangle(130,369,130,85,0x749F9A)
@@ -119,8 +121,45 @@ export class Phone extends Phaser.GameObjects.Graphics {
         this.studyButton.on('pointerdown', () => {
             this.hideAllContainers()
             this.studyContainer.setVisible(true)
-
         });
+
+
+        //video hover effects
+        this.funVideos.on('pointerover',() => {
+            this.playButton.setVisible(true)
+            this.playButton.setPosition(130,350)
+        });
+        this.educationVideos.on('pointerover',() => {
+            this.playButton.setVisible(true)
+            this.playButton.setPosition(130,410)
+        });
+        this.newsVideos.on('pointerover',() => {
+            this.playButton.setVisible(true)
+            this.playButton.setPosition(130,470)
+        });
+
+        this.funVideos.on('pointerout',() => {
+            this.playButton.setVisible(false)
+        });
+        this.educationVideos.on('pointerout',() => {
+            this.playButton.setVisible(false)
+        });
+        this.newsVideos.on('pointerout',() => {
+            this.playButton.setVisible(false)
+        });
+
+        this.funVideos.on('pointerdown',() => {
+            this.scene.watchFocus()
+        });
+        this.educationVideos.on('pointerdown',() => {
+            this.scene.watchStudy()
+        });
+        this.newsVideos.on('pointerdown',() => {
+            this.scene.watchNews()
+        });
+
+        
+        
     }
 
     focusPhone() {

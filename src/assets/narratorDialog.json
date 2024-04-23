@@ -27,7 +27,11 @@
                 },
                 {
                     "name": "Narrator",
-                    "text": "You slept for eight hours last night so your energy bar is full! Your focus levels are a little low this morning-- how about a shower to help clear your mind? (use WASD or arrow keys to move after you click to exit this dialog)",
+                    "text": "When a label pops up when you are close by an interactive object, click the label to use to object."
+                },
+                {
+                    "name": "Narrator",
+                    "text": "You slept for eight hours last night so your energy bar is full! Your focus levels are low this morning-- try taking a shower to help clear your mind! (use WASD or arrow keys to move after exiting dialog)",
                     "goal":"shower"
                 }
             ]

@@ -11598,23 +11598,6 @@
                  "y":5469.33333333333
                 }, 
                 {
-                 "height":204,
-                 "id":3,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"name",
-                         "type":"string",
-                         "value":"enterDorm"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":132,
-                 "x":7048,
-                 "y":5620
-                }, 
-                {
                  "height":144,
                  "id":4,
                  "name":"",

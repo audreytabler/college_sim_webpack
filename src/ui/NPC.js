@@ -75,13 +75,12 @@ export class NPC extends Phaser.GameObjects.Graphics {
     }
 
 // Handle collision between the NPC sprite and any other object
-handleCollision(npc, object) {
-    console.log('Collision detected:', npc, object);
+/*handleCollision(npc, object) {
     // Apply collision handling logic here
     // Example: Apply a force or velocity to the NPC sprite
     //const forceMagnitude = 100; // Adjust as needed
     npc.setVelocity(0, 0); // Stop the NPC sprite upon collision
-}
+}*/
 
 
 }

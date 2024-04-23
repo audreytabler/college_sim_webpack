@@ -1,4 +1,4 @@
-//import '../style.css'
+//import '../assets/style.css'
 import Phaser from 'phaser'
 import {TitleScene} from '../scenes/titleScene.js'
 import { CampusScene } from '../scenes/campusScene.js';

@@ -1,4 +1,5 @@
 import Phaser from 'phaser'
+import { NPC } from '../ui/NPC.js';
 
 
 export class ClassScene extends Phaser.Scene{
@@ -29,7 +30,10 @@ export class ClassScene extends Phaser.Scene{
 
     }
     create(){
-        
+        this.sound.stopAll();
+        var music = this.sound.add('inside');
+        music.play();
+
         this.scene.get("UI_SCENE").newScene(this.sys.settings.key)
         this.uiScene = this.scene.get("UI_SCENE")
 
@@ -48,6 +52,8 @@ export class ClassScene extends Phaser.Scene{
 
         //COLLISION WITH WALLS STUFF
         this.loadPlayer()
+        this.npc = new NPC(this,7525,5840,"Alex",0,'npc4')
+        //206.33333333333087 Y: 1707.3333333333446
         wallLayer.setCollisionByExclusion([-1]);
         this.physics.add.collider(this.player, wallLayer);
         this.physics.add.collider(this.hair, wallLayer);
@@ -186,6 +192,8 @@ export class ClassScene extends Phaser.Scene{
             this.shirt.play("forwards",true)
         }
         else {
+            this.hair.setPosition(this.player.x,this.player.y)
+            this.shirt.setPosition(this.player.x,this.player.y)
             this.player.setVelocityX(0);
             this.player.setVelocityY(0);
             this.hair.setVelocityX(0);
@@ -224,7 +232,7 @@ export class ClassScene extends Phaser.Scene{
         this.player.setCollideWorldBounds(true)
 
         this.cameras.main.startFollow(this.player, false, 0.2, 0.2);
-        
+        /*
         this.anims.create({
             key: "idle",
             frameRate: 10,
@@ -319,6 +327,7 @@ export class ClassScene extends Phaser.Scene{
             frames: this.anims.generateFrameNumbers("shirt", { start: 25, end: 28 }),
             repeat: -1
         });
+        */
 
     }
 }

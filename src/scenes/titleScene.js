@@ -27,7 +27,7 @@ export class TitleScene extends Phaser.Scene{
 
         this.load.image("hair1","/assets/CharacterSpriteHair1.png")
         this.load.image("hair2","/assets/CharacterSpriteHair2.png")
-        this.load.image("hair3","/assets/CharacterSpriteHair2.png") //long hair
+        this.load.image("hair3","/assets/CharacterSpriteHair3.png") //long hair
         this.load.image("hair4","/assets/CharacterSpriteHair4.png") // bald
 
         this.load.image("shirtt","/assets/CharacterSpritesheetShirt.png")

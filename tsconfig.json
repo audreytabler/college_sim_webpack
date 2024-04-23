@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "./dist",
     "target": "ES2015",
     "module": "ES2015",
 
@@ -18,5 +19,5 @@
     "lib": ["dom", "esnext"]
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "exclude": ["node_modules", "**/*.spec.ts","./dist/**/*"]
 }

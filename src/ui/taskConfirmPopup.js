@@ -114,13 +114,13 @@ export class TaskConfirm extends Phaser.GameObjects.Graphics {
             }
         });
         
-        this.numHoursText = this.scene.make.text({x:780,y:190,style:{ 
+        this.numHoursText = this.scene.make.text({x:780,y:205,style:{ 
             fontSize: '50px',fontFamily:'courier new',
             //fontSize: '80px', 
             color: '#ffffff'
         }})
-        this.upArrow = this.scene.add.circle(750,205,15,0x465A7F).setInteractive()//this.scene.add.rectangle(850,200,35,35,0x9BD9AC).setInteractive();
-        this.arrows= this.scene.make.text({x:734,y:188,text:'⏶',style: {font: '35px Courier New',fill: 'white',style: 'bold',}})
+        this.upArrow = this.scene.add.circle(750,215,15,0x465A7F).setInteractive()//this.scene.add.rectangle(850,200,35,35,0x9BD9AC).setInteractive();
+        this.arrows= this.scene.make.text({x:734,y:198,text:'⏶',style: {font: '35px Courier New',fill: 'white',style: 'bold',}})
         this.decorContainer.add(this.arrows)
         this.decorContainer.setDepth(1)
         this.upArrow.toString = function() {
@@ -151,8 +151,8 @@ export class TaskConfirm extends Phaser.GameObjects.Graphics {
             this.confirmTask()
         });
 
-        this.downArrow = this.scene.add.circle(750,240,15,0x465A7F).setInteractive()//this.scene.add.rectangle(850,250,35,35,0xD69D80).setInteractive();
-        this.arrows= this.scene.make.text({x:734,y:225,text:'⏷',style: {font: '35px Courier New',fill: 'white',style: 'bold',}})
+        this.downArrow = this.scene.add.circle(750,250,15,0x465A7F).setInteractive()//this.scene.add.rectangle(850,250,35,35,0xD69D80).setInteractive();
+        this.arrows= this.scene.make.text({x:734,y:235,text:'⏷',style: {font: '35px Courier New',fill: 'white',style: 'bold',}})
         this.downArrow.toString = function() {
             return "clickable box";
         };
@@ -230,14 +230,14 @@ export class TaskConfirm extends Phaser.GameObjects.Graphics {
             this.scene.statsOverlay.updateSocial(statIncrement)
             this.scene.statsOverlay.updateEnergy(-statIncrement)
         }
-        if(this.action === "scroll on social media"){ 
+        if(this.action === "watch the news"){ 
             this.scene.statsOverlay.updateSocial(statIncrement*0.5)
             this.scene.statsOverlay.updateFocus(statIncrement*0.5)
             this.scene.statsOverlay.updateEnergy(-statIncrement)
         }
-        if(this.action === "view flash cards"){ 
+        if(this.action === "watch study videos"){ 
             this.scene.statsOverlay.updateFocus(-statIncrement)
-            //increase academic score
+            this.scene.phone.changeStudyHours(-this.numHours)
             this.scene.statsOverlay.updateEnergy(-statIncrement*0.5)
         }
         

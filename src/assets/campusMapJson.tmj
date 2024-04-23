@@ -355,7 +355,7 @@
                         {
                          "name":"toSceneKey",
                          "type":"string",
-                         "value":"UNION_SCENE"
+                         "value":"GYM_SCENE"
                         }],
                  "rotation":0,
                  "type":"",
